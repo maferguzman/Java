@@ -1,0 +1,52 @@
+package dollargame;
+
+import java.util.Scanner;
+
+public class DollarChangeGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Implement a Scanner to read user input
+		Scanner entry = new Scanner(System.in);
+		
+		//Declare the variables needed
+		double pennies;
+		double nickels;
+		double dimes;
+		double quarters;
+		double dollar = 1.00;
+		
+		//Ask the user for number of pennies = 1 cent
+		System.out.println("--------------How many pennies you've got?--------------");
+		pennies = entry.nextDouble();
+		
+		
+		//Ask the user for number of nickels = 5 cent
+		System.out.println("--------------How many nickels you've got?--------------");
+		nickels = entry.nextDouble();
+		
+		
+		//Ask the user for number of dimes = 10 cents
+		System.out.println("--------------How many cents you've got?--------------");
+		dimes = entry.nextDouble();
+		
+		//Ask the user for number of quarters = 25 cents
+		System.out.println("--------------How many quarters you've got?--------------");
+		quarters = entry.nextDouble();
+		
+		entry.close();
+		
+		//Count total value of the coins
+		double totalValue = ((pennies * 0.01) + (nickels * 0.05) + (dimes * 0.10) + (quarters * 0.25));
+		
+		//Print message if they won
+		//Print message if they lost and calculate the difference
+		if(totalValue == dollar) {
+			System.out.println("Congratulations you have $1.00 USD dollar");
+		} else {
+			System.out.println(totalValue - dollar);
+		}
+	}
+
+}

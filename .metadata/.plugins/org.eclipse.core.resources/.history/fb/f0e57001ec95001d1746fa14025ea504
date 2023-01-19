@@ -1,0 +1,18 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class GrossPayCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner usuario = new Scanner(System.in);
+		
+		//String hours = usuario.nextLine();
+		
+		System.out.println("---Number of hours worked---");
+		System.out.println("---Hourly pay rate---");
+
+	}
+
+}
