@@ -1,0 +1,7 @@
+package repetition_structures;
+
+public class ForLoop {
+	public static void main (String[] args) {
+		
+	}
+}

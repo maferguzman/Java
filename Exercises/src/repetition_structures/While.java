@@ -1,0 +1,35 @@
+package repetition_structures;
+
+import java.util.Scanner;
+
+public class While {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Initialize Scanner
+		Scanner employee = new Scanner(System.in);
+		
+		//Add variables
+		int payRate = 16;
+		int maxHours = 45;
+		
+		//Use Scanner
+		System.out.println("-----------How many hours did you worked this week?-------------");
+		int hoursWorked = employee.nextInt();
+		
+		//Validate the input, employee can NOT make overtime, limit = 45 hours.
+		while(hoursWorked > maxHours) {
+			System.out.println("Please enter a valid work time. Working hours must be between 1 and 45");
+			hoursWorked = employee.nextInt(); //Update the variable hoursWorked with the new input
+		}
+		
+		//Close Scanner
+		employee.close();
+		
+		//Calculate the pay
+		int salary = payRate * hoursWorked;
+		
+		//Print the result
+		System.out.println("Your pay this week is $" + salary);
+	}
+
+}

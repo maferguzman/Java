@@ -1,0 +1,19 @@
+package repetition_structures;
+
+import java.util.Scanner;
+
+public class ForLoop {
+	public static void main (String[] args) {
+		Scanner items = new Scanner(System.in);
+		
+		//initialize variables
+		int productsTotal;
+		
+		//Ask for the products
+		System.out.println("--------How many products you've got?--------");
+		productsTotal = items.nextInt();
+		
+		
+		//For loop to go trough all of the shopping items
+	}
+}

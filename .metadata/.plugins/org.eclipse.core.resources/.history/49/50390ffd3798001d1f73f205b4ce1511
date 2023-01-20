@@ -1,0 +1,16 @@
+package repetition_structures;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner user = new Scanner(System.in);
+		
+		int runAgain;
+		
+		user.close();
+	}
+
+}

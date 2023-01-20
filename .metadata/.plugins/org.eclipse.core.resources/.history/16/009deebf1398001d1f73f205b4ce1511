@@ -1,0 +1,36 @@
+package repetition_structures;
+
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Initialize Scanner
+		Scanner employee = new Scanner(System.in);
+		
+		//Add variables
+		int payRate = 16;
+		int maxHours = 45;
+		
+		//Use Scanner
+		System.out.println("-----------How many hours did you worked this week?-------------");
+		int hoursWorked = employee.nextInt();
+		
+		//Validate the input, employee can NOT make overtime, limit = 45 hours.
+		while(hoursWorked > maxHours) {
+			System.out.println("Please enter a valid work time");
+			
+		}
+		
+		//Close Scanner
+		employee.close();
+		
+		//Calculate the pay
+		int salary = payRate * hoursWorked;
+		
+		//Print the result
+		System.out.println("Your total is $" + salary);
+	}
+
+}
