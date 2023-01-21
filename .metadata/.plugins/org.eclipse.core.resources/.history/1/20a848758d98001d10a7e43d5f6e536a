@@ -1,0 +1,11 @@
+package repetition_structures;
+
+public class NestedLoops {
+
+	//Find the average test score for each student in the class. There are 24 students and four test.
+	
+	public static void main (String[] args) {
+		
+	}
+	
+}

@@ -15,13 +15,13 @@ public class ForLoop {
 		productsTotal = items.nextInt();
 		
 		//For loop to go trough all of the shopping items
-		for(int i = 1; i <= productsTotal; i++) {
-			System.out.println("What´s the price of product N°" + i + "?"); //Ask for the price of current product
+		for(int i = 0; i < productsTotal; i++) {
+			System.out.println("What´s the price of product N°" + (i + 1) + "?"); //Ask for the price of current product
 			int price = items.nextInt(); //User adds price of the product
 			
 			//Calculate the total of all products
-			finalPay += price; //finalPay = finalPay + price. each loop adds the new price of the new product
-			
+			finalPay += price; 
+			//finalPay gets updated with each iteration adding the price of each product ( finalPay = finalPay + price  )
 		}
 		items.close();
 		

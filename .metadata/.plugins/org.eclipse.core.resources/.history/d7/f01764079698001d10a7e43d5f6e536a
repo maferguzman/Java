@@ -1,0 +1,15 @@
+package find_letter;
+
+import java.util.Scanner;
+
+public class FindLetter {
+	
+	//Ask the user for a word in the form of a String
+	Scanner word = new Scanner(System.in);
+	String text = word.nextLine();
+	
+	
+	//Use the for loop and the length method to iterate trough all words
+	//text.length() and text.charAt()
+	
+}

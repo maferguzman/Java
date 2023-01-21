@@ -1,0 +1,36 @@
+package find_letter;
+
+import java.util.Scanner;
+
+public class FindLetter {
+	
+	public static void main (String[] args) {
+		
+		
+		//Ask the user for a word in the form of a String
+		Scanner word = new Scanner(System.in);
+		
+		//Intructions for the user
+		System.out.println("Enter a word");
+		String text = word.nextLine();
+		
+		word.close();
+		
+		boolean letterFound = false;
+		//Use the for loop and the length method to iterate trough all words
+		//text.length() and text.charAt()
+		
+		for(int i = 0; i < text.length(); i++) {
+			
+			char currentLetter = text.charAt(i);
+			if (currentLetter == 'A' || currentLetter == 'a') {
+				letterFound = true;
+				break;
+			}
+		}
+		
+		//System.out.println();
+		
+	}
+	
+}

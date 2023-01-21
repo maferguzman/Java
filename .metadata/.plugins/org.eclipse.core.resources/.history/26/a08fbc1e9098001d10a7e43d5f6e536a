@@ -1,0 +1,41 @@
+package repetition_structures;
+
+import java.util.Scanner;
+
+public class NestedLoops {
+
+	//Find the average test score for each student in the class. There are 24 students and four test.
+	
+	public static void main (String[] args) {
+		//declare and initialize variables we know
+		int students = 24;
+		int tests = 4;
+		//int finalGrade = 0;
+		
+		//Create a Scanner to take input for every test score (4 test in total)
+		Scanner score = new Scanner(System.in);
+		
+		//Create a Nested Loop to go trough all 24 students and four tests for every student
+		//OUTER LOOP
+		for(int i = 0; i < students; i++) {
+			
+			double total = 0;
+			
+			//INNER LO0OP (Process the test scores)
+			for(int j = 0; j < tests; j++) {
+				
+				System.out.println("What´s the grade for test N°" + (j + 1) + "?");
+				int addScore = score.nextInt();
+				total += addScore; //Final Value of addScore would be all summed up
+				
+				
+			}
+			
+			System.out.println("The final grade for student N°" + (i + 1) + " is: " + total);
+			
+		}
+	
+		score.close();
+	}
+	
+}
