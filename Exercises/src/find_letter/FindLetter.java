@@ -28,6 +28,7 @@ public class FindLetter {
 			if (currentLetter == 'A' || currentLetter == 'a') { 
 				//If letter in turn happens to match an 'a', then change the value of the variable letterFound to be true (we initialized as false at the beggining of the loop)
 				letterFound = true;
+				System.out.println(letterFound);
 				//Once the match is found break (STOP) the loop
 				break; 
 			}
